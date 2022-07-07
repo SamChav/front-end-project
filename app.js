@@ -57,6 +57,7 @@ button.setAttribute("id", "button");
 button.innerHTML = "&times";
 
 
+
 //get data for clickable planets on homepage
 $.get(URL, (data) => {
   earth.addEventListener("click", () => {
