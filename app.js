@@ -2,10 +2,9 @@ const body = document.body;
 
 const URL = `https://api.le-systeme-solaire.net/rest/bodies/`;
 
-
 //search bar
 const $input = $("input[class='search']");
-const $userForm = $("#user")
+const $userForm = $("#user");
 
 $userForm.submit((event) => {
   event.preventDefault();
@@ -32,33 +31,34 @@ const sun = document.querySelector("#sun");
 const earth = document.querySelector("#earth");
 const merc = document.querySelector("#merc");
 const venus = document.querySelector("#venus");
-const mars = document.querySelector("#mars")
-const jupiter = document.querySelector("#jupiter")
-const saturn = document.querySelector("#saturn")
-const uranus = document.querySelector("#uranus")
-const neptune = document.querySelector("#neptune")
-const pluto = document.querySelector("#pluto")
+const mars = document.querySelector("#mars");
+const jupiter = document.querySelector("#jupiter");
+const saturn = document.querySelector("#saturn");
+const uranus = document.querySelector("#uranus");
+const neptune = document.querySelector("#neptune");
+const pluto = document.querySelector("#pluto");
 
 //create divs
-    //container
-    const container = document.createElement("div")
-    container.classList.add("container")
+//container
+const container = document.createElement("div");
+container.classList.add("container");
 
-    //header
-    const cardTitle = document.createElement("div")
-    cardTitle.classList.add("planetCard-top")
-    container.appendChild(cardTitle)
-    //body
-    const cardBody = document.createElement("div")
-    cardBody.classList.add("planetCard-body")
-    container.appendChild(cardBody)
-    //button
-    const button = document.createElement("button");
-    button.setAttribute('id', 'button')
-    button.innerHTML = "&times"
+//header for card
+const cardTitle = document.createElement("div");
+cardTitle.classList.add("planetCard-top");
+container.appendChild(cardTitle);
+//body for card
+const cardBody = document.createElement("div");
+cardBody.classList.add("planetCard-body");
+container.appendChild(cardBody);
+//button to close card
+const button = document.createElement("button");
+button.setAttribute("id", "button");
+button.innerHTML = "&times";
 
+
+//get data for clickable planets on homepage
 $.get(URL, (data) => {
-  
   earth.addEventListener("click", () => {
     body.append(container);
     cardTitle.innerHTML = `English Name: ${data.bodies[243].englishName} <br> Name: ${data.bodies[243].name}`;
@@ -99,7 +99,6 @@ $.get(URL, (data) => {
         Day length (hours): ${data.bodies[242].sideralRotation} <br>
         Average Temperature (kelvin): ${data.bodies[242].avgTemp} <br>
         Axial Tilt: ${data.bodies[242].axialTilt}`;
-    
   });
 
   venus.addEventListener("click", () => {
@@ -127,7 +126,7 @@ $.get(URL, (data) => {
         Year length (days): ${data.bodies[239].sideralOrbit} <br>
         Day length (hours): ${data.bodies[239].sideralRotation} <br>
         Average Temperature (kelvin): ${data.bodies[239].avgTemp} <br>
-        Axial Tilt: ${data.bodies[239].axialTilt}`;        
+        Axial Tilt: ${data.bodies[239].axialTilt}`;
   });
 
   saturn.addEventListener("click", () => {
@@ -141,7 +140,7 @@ $.get(URL, (data) => {
         Year length (days): ${data.bodies[241].sideralOrbit} <br>
         Day length (hours): ${data.bodies[241].sideralRotation} <br>
         Average Temperature (kelvin): ${data.bodies[241].avgTemp} <br>
-        Axial Tilt: ${data.bodies[241].axialTilt}`;        
+        Axial Tilt: ${data.bodies[241].axialTilt}`;
   });
 
   jupiter.addEventListener("click", () => {
@@ -155,7 +154,7 @@ $.get(URL, (data) => {
         Year length (days): ${data.bodies[238].sideralOrbit} <br>
         Day length (hours): ${data.bodies[238].sideralRotation} <br>
         Average Temperature (kelvin): ${data.bodies[238].avgTemp} <br>
-        Axial Tilt: ${data.bodies[238].axialTilt}`;        
+        Axial Tilt: ${data.bodies[238].axialTilt}`;
   });
 
   uranus.addEventListener("click", () => {
@@ -169,7 +168,7 @@ $.get(URL, (data) => {
         Year length (days): ${data.bodies[199].sideralOrbit} <br>
         Day length (hours): ${data.bodies[199].sideralRotation} <br>
         Average Temperature (kelvin): ${data.bodies[199].avgTemp} <br>
-        Axial Tilt: ${data.bodies[199].axialTilt}`;        
+        Axial Tilt: ${data.bodies[199].axialTilt}`;
   });
 
   neptune.addEventListener("click", () => {
@@ -183,7 +182,7 @@ $.get(URL, (data) => {
         Year length (days): ${data.bodies[219].sideralOrbit} <br>
         Day length (hours): ${data.bodies[219].sideralRotation} <br>
         Average Temperature (kelvin): ${data.bodies[219].avgTemp} <br>
-        Axial Tilt: ${data.bodies[219].axialTilt}`;        
+        Axial Tilt: ${data.bodies[219].axialTilt}`;
   });
 
   pluto.addEventListener("click", () => {
@@ -197,13 +196,17 @@ $.get(URL, (data) => {
         Year length (days): ${data.bodies[208].sideralOrbit} <br>
         Day length (hours): ${data.bodies[208].sideralRotation} <br>
         Average Temperature (kelvin): ${data.bodies[208].avgTemp} <br>
-        Axial Tilt: ${data.bodies[208].axialTilt}`;        
+        Axial Tilt: ${data.bodies[208].axialTilt}`;
   });
-
 });
 //close button for popup
-button.addEventListener("click", () => {            
-    container.remove(".container")        
+button.addEventListener("click", () => {
+  container.remove(".container");
 });
 
+//testing
 
+anime({
+  targets: "#earth",
+  translate: 250,
+});

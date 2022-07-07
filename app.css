@@ -1,83 +1,88 @@
 body {
     background-image: URL("/pics/space.jpg");
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-attachment: fixed;
-    background-size: cover;    
+    background-size:cover;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    
 }
 
 
 #sun {
   position: fixed;
-  right: 50%;
-  top: 50%;
-  translate: (60%, 60%);
+  right: 88%;
+  top: 3%;
+  /* translate: (60%, 60%); */
   z-index: -10;
   cursor: pointer;
 }
 
 #merc{
     position: fixed;
-    right: 49%;
-    top: 47%;
+    right: 87%;
+    top: 50%;
     cursor: pointer;
+    
 }
 
 
 #venus {
     position: fixed;
-    right: 68%;
-    bottom: 38%;
+    right: 80%;
+    bottom: 47.5%;
     cursor: pointer;
 }
 
 
 #earth {
     position: fixed;
-    right: 30%;
-    bottom: 38%;
+    right: 74%;
+    bottom: 47%;
     cursor: pointer;
 }
 
 #mars {
     position: fixed;
-    right: 60%;
-    bottom: 15%;
+    right: 68%;
+    bottom: 47.5%;
     cursor: pointer;
 }
 
 #jupiter{
 position: fixed;
-    right: 16%;
-    bottom: -3%;
+    right: 53%;
+    bottom: 41%;
     cursor: pointer;
 }
 
 #saturn {
     position: fixed;
-    right: 55%;
-    bottom: 62%;
+    right: 37%;
+    bottom: 40%;
     cursor: pointer;
 }
 
 #uranus {
     position: fixed;
-    right: 76%;
-    bottom: 55%;
+    right: 32%;
+    bottom: 44%;
     cursor: pointer;
 }
 
 #neptune {
     position: fixed;
-    right: 22%;
-    bottom: 54%;
+    right: 26%;
+    bottom: 43.8%;
     cursor: pointer;
 }
 
 #pluto {
     position: fixed;
-    right: 50%;
-    bottom: 67%;
+    right: 22%;
+    bottom: 45%;
     cursor: pointer;
 }
 
@@ -97,6 +102,8 @@ position: fixed;
     color: whitesmoke;
     font-size: larger;
     font-family: serif;
+    
+    
 }
 .planetCard-top {
     padding: 5px 5px;
@@ -136,4 +143,9 @@ position: fixed;
     border-radius: 30px;
     text-align: center;
     border-radius: 1px solid black;    
+}
+@media(max-width: 768px) {
+    .elementor-section-wrap {
+        display: block;
+    }
 }
