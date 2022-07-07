@@ -1,0 +1,139 @@
+body {
+    background-image: URL("/pics/space.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;    
+}
+
+
+#sun {
+  position: fixed;
+  right: 50%;
+  top: 50%;
+  translate: (60%, 60%);
+  z-index: -10;
+  cursor: pointer;
+}
+
+#merc{
+    position: fixed;
+    right: 49%;
+    top: 47%;
+    cursor: pointer;
+}
+
+
+#venus {
+    position: fixed;
+    right: 68%;
+    bottom: 38%;
+    cursor: pointer;
+}
+
+
+#earth {
+    position: fixed;
+    right: 30%;
+    bottom: 38%;
+    cursor: pointer;
+}
+
+#mars {
+    position: fixed;
+    right: 60%;
+    bottom: 15%;
+    cursor: pointer;
+}
+
+#jupiter{
+position: fixed;
+    right: 16%;
+    bottom: -3%;
+    cursor: pointer;
+}
+
+#saturn {
+    position: fixed;
+    right: 55%;
+    bottom: 62%;
+    cursor: pointer;
+}
+
+#uranus {
+    position: fixed;
+    right: 76%;
+    bottom: 55%;
+    cursor: pointer;
+}
+
+#neptune {
+    position: fixed;
+    right: 22%;
+    bottom: 54%;
+    cursor: pointer;
+}
+
+#pluto {
+    position: fixed;
+    right: 50%;
+    bottom: 67%;
+    cursor: pointer;
+}
+
+.container {
+    border-radius: 20px;
+    position: fixed;
+    top: 44%;
+    left: 43%;
+    transform: (-50%, -50%) scale(0);
+    transition: 200ms;
+    border: 5px solid gray;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .7);
+    width: 400px;
+    max-width: 50%;
+    color: whitesmoke;
+    font-size: larger;
+    font-family: serif;
+}
+.planetCard-top {
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.planetCard-body {
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planetCard-top .cardClose {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+.search {
+    width: 500px;
+    height: 25px;
+    border-radius: 30px;
+    text-align: center;
+    border-radius: 1px solid black;    
+}
