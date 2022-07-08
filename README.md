@@ -7,7 +7,7 @@
 <br><br>
 <h2>How To Use</h2>
 <br>
-Simple click on a planet to get some more techincal statistics, or try searching what you're looking for in the top left.
+Simply click on a planet to get some techincal statistics, or try searching what you're looking for in the top left.
 <br><br>
 <h3>Lessons Learned</h3>
 <br>
