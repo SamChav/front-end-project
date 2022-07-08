@@ -7,8 +7,10 @@ body {
     height: 70vh;
     width: 100vw;
     display: flex;
-    min-width: 400px;
-    max-width: 1000px;
+    min-width: 100px;
+    max-width: 1080px;
+    min-height: 300px;
+    max-height: 1000px;
     position: absolute;
 }
 
@@ -99,8 +101,8 @@ body {
 
 .container {
     border-radius: 20px;
-    top: 44%;
-    left: 43%;
+    top: 12%;
+    left: 15%;
     transform: (-50%, -50%) scale(0);
     border: 5px solid gray;
     border-radius: 5px;
