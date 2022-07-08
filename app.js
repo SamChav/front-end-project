@@ -2,10 +2,11 @@ const body = document.body;
 
 const URL = `https://api.le-systeme-solaire.net/rest/bodies/`;
 
-//search bar
+
 const $input = $("input[class='search']");
 const $userForm = $("#user");
 
+//my dynamic search data
 $userForm.submit((event) => {
   event.preventDefault();
   const userInput = $input.val();

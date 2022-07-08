@@ -14,9 +14,9 @@ body {
     position: absolute;
 }
 
-
+/* planets */
 #sun {
-    position: fixed;
+    /* position: fixed; */
     right: 88%;
     top: 3%;
     /* translate: (60%, 60%); */
@@ -26,7 +26,7 @@ body {
 }
 
 #merc {
-    position: fixed;
+    /* position: fixed; */
     right: 87%;
     top: 70%;
     cursor: pointer;
@@ -35,7 +35,7 @@ body {
 
 
 #venus {
-    position: fixed;
+    /* position: fixed; */
     right: 79%;
     top: 69%;
     cursor: pointer;
@@ -44,7 +44,7 @@ body {
 
 
 #earth {
-    position: fixed;
+    /* position: fixed; */
     right: 71%;
     top: 68%;
     cursor: pointer;
@@ -52,7 +52,7 @@ body {
 }
 
 #mars {
-    position: fixed;
+    /* position: fixed; */
     right: 62%;
     top: 69%;
     cursor: pointer;
@@ -60,7 +60,7 @@ body {
 }
 
 #jupiter {
-    position: fixed;
+    /* position: fixed; */
     right: 44%;
     top: 59%;
     cursor: pointer;
@@ -68,7 +68,7 @@ body {
 }
 
 #saturn {
-    position: fixed;
+    /* position: fixed; */
     right: 24%;
     top: 59%;
     cursor: pointer;
@@ -76,7 +76,7 @@ body {
 }
 
 #uranus {
-    position: fixed;
+    /* position: fixed; */
     right: 17%;
     top: 67%;
     cursor: pointer;
@@ -84,7 +84,7 @@ body {
 }
 
 #neptune {
-    position: fixed;
+    /* position: fixed; */
     right: 8%;
     top: 67%;
     cursor: pointer;
@@ -92,13 +92,14 @@ body {
 }
 
 #pluto {
-    position: fixed;
+    /* position: fixed; */
     right: 0%;
     top: 68.5%;
     cursor: pointer;
     position: absolute;
 }
 
+/* information card */
 .container {
     border-radius: 20px;
     top: 12%;
@@ -144,7 +145,7 @@ body {
 
 }
 
-#button {
+/* #button {
     border: none;
     cursor: pointer;
     outline: none;
@@ -153,8 +154,10 @@ body {
     font-weight: bold;
     color: white;
 
-}
+} */
 
+
+/* search window */
 .search {
     width: 20vmax;
     height: 25px;
@@ -165,7 +168,7 @@ body {
 }
 
 
-
+/* dropdown button */
 .dropButton {
     background-color: black;
     color: white;
