@@ -185,11 +185,10 @@ body {
 }
 
 .dropdown {
-    position: fixed;
     margin-top: 0%;
-    margin-left: 60%;
+    margin-left: 70%;
     position: absolute;
-
+    
 }
 
 .buttonContent {
@@ -225,4 +224,8 @@ body {
 
 .dropdown:hover .dropButton {
     background-color: black;
+}
+
+#label {
+    color: white;
 }
