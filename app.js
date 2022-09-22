@@ -2,7 +2,6 @@ const body = document.body;
 
 const URL = `https://api.le-systeme-solaire.net/rest/bodies/`;
 
-
 const $input = $("input[class='search']");
 const $userForm = $("#user");
 //my dynamic search data
@@ -10,11 +9,11 @@ $userForm.submit((event) => {
   event.preventDefault();
   const userInput = $input.val();
   const URL2 = `https://api.le-systeme-solaire.net/rest.php/bodies/${userInput}`;
-  $.get(URL2, (data) => {   
-      body.append(container);
-      cardTitle.innerHTML = `English Name: ${data.englishName} <br> Name: ${data.name}`;
-      cardTitle.appendChild(button);
-      cardBody.innerHTML = `Mass: ${data.mass.massValue}×10^x Kilograms <br>
+  $.get(URL2, (data) => {
+    body.append(container);
+    cardTitle.innerHTML = `English Name: ${data.englishName} <br> Name: ${data.name}`;
+    cardTitle.appendChild(button);
+    cardBody.innerHTML = `Mass: ${data.mass.massValue}×10^x Kilograms <br>
                   Gravity: ${data.gravity} M/sec <br>
                   Escape Velocity: ${data.escape} M/sec<br>
                   Radius: ${data.meanRadius} <br>
@@ -200,4 +199,3 @@ $.get(URL, (data) => {
 button.addEventListener("click", () => {
   container.remove(".container");
 });
-
